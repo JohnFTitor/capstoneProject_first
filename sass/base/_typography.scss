@@ -1,1 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1&family=Lato&display=swap');
+
+@font-face {
+	font-family: 'Cocogoose';
+	src: url(../../assets/fonts/cocogoose/cocogoose_trial.woff);
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Cocogoose', sans-serif;
+  color: $color-subtitle;
+}
+
+p,
+a {
+  font-family: 'Lato', sans-serif;
+  color: $color-text;
+  font-size: 18px;
+}
+
+.info {
+	color: $color-text;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+.title {
+	color: $color-title;
+	&-description {
+		font-size: 24px;
+	}
+	&-header {
+		font-size: 40px;
+		font-weight: 400;
+		line-height: 40px;
+	}
+}
