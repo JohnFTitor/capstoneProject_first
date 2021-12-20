@@ -17,3 +17,12 @@ h2,
 h3 {
   margin: 0;
 } 
+
+button {
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+  background-color: transparent;
+}

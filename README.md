@@ -78,6 +78,7 @@ Some Icons were provided by [Fontawesome](fontawesome.com). Next are the links f
 - [Bootstrap Icon](https://fontawesome.com/v5.15/icons/bootstrap?style=brands)
 
 This icons are licensed under the Creative Commons Attribution 4.0 internacional license. Here is the link to [Fontawesome license](https://fontawesome.com/license).
+This icon color was modified.
 
 Images were provided by [Unsplash](https://unsplash.com/).
 

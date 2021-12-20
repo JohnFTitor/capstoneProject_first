@@ -8,20 +8,23 @@
 h1,
 h2,
 h3 {
-  font-family: 'Cocogoose', sans-serif;
+  font-family: 'Lato', sans-serif;
   color: $color-subtitle;
 }
 
 p,
-a {
+a,
+button {
   font-family: 'Lato', sans-serif;
   color: $color-text;
   font-size: 18px;
+	line-height: 25px;
 }
 
 .info {
 	color: $color-text;
 	font-size: 30px;
+	font-family: 'Cocogoose', sans-serif;
 	font-weight: 400;
 }
 
@@ -31,6 +34,7 @@ a {
 		font-size: 24px;
 	}
 	&-header {
+		font-family: 'Cocogoose', sans-serif;
 		font-size: 40px;
 		font-weight: 400;
 		line-height: 40px;

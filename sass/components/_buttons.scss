@@ -1,0 +1,19 @@
+button:hover {
+    cursor: pointer;
+}
+
+.interaction {
+    background-color: $color-title;
+    color: $color-text-white;
+    padding: 30px 50px;
+    margin: 40px 0;
+}
+
+.extend {
+    width: 100%;
+    border: 1px solid $color-line;
+    border-radius: 5px;
+    padding: 15px 10px;
+    color: $color-subtitle;
+    font-size: 16px;
+}
