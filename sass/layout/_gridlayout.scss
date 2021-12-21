@@ -1,0 +1,8 @@
+
+.grid-container {
+    @include for-desktop {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 25px;
+    }
+}

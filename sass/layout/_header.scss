@@ -18,13 +18,6 @@
   }
 }
 
-.desktop {
-  display: none;
-  @include for-desktop {
-    display: block;
-  }
-}
-
 .nav {
   @include for-desktop {
     display: flex;

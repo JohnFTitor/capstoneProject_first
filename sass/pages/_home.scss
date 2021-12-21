@@ -81,7 +81,7 @@
   }
 }
 
-.programm {
+.program {
   background-color: $color-subtitle;
   display: flex;
   flex-direction: column;
@@ -206,4 +206,9 @@
   @include for-desktop {
     font-size: 22px;
   }
+}
+
+.line-dark {
+  margin: 10px 0 10px 0;
+  border-color: $color-line;
 }
