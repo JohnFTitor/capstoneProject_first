@@ -50,6 +50,9 @@ button {
   font-size: 30px;
   font-family: 'Cocogoose', sans-serif;
   font-weight: 400; }
+  @media screen and (min-width: 1000px) {
+    .info {
+      font-size: 35px; } }
 
 .title {
   color: #ec5242; }
@@ -66,6 +69,14 @@ button {
     color: transparent;
     background-image: linear-gradient(45deg, #c71e1e 0%, red 26%, #ff9500 76%, #ffb800 100%);
     background-color: #ec5242; }
+    @media screen and (min-width: 1000px) {
+      .title-home {
+        font-size: 60px;
+        line-height: 60px;
+        padding: 10px 0; } }
+  @media screen and (min-width: 1000px) {
+    .title-description-home {
+      font-size: 40px; } }
 
 .theme2-title {
   font-weight: 600;
@@ -170,6 +181,9 @@ button:hover {
 .presentation > * {
   margin-left: 10px;
   margin-bottom: 10px; }
+  @media screen and (min-width: 1000px) {
+    .presentation > * {
+      margin-left: 0; } }
 
 .container {
   box-sizing: border-box;
@@ -178,9 +192,24 @@ button:hover {
     border: 4px solid white;
     padding: 20px;
     margin: 20px 0; }
+    @media screen and (min-width: 1000px) {
+      .container-text {
+        width: 80%; }
+        .container-text p {
+          font-size: 16px; } }
 
 .presentation {
-  padding: 50px 10px 90px 10px;
+  padding: 50px 10px 90px 10px; }
+  @media screen and (min-width: 1000px) {
+    .presentation {
+      width: 90%;
+      padding-top: 15vh;
+      padding-bottom: 20vh; } }
+  @media screen and (min-width: 1440px) {
+    .presentation {
+      width: 75%; } }
+
+#presentation {
   background-color: #f4f4f4; }
 
 .language {
@@ -273,6 +302,17 @@ button:hover {
   width: 70px;
   height: 70px;
   z-index: -1; }
+
+@media screen and (min-width: 1000px) {
+  .presentation,
+  .programm,
+  .professors {
+    padding-left: 13vw;
+    padding-right: 13vw; } }
+
+@media screen and (min-width: 1000px) {
+  .info-description {
+    font-size: 22px; } }
 
 #about {
   background-color: #f4f4f4; }

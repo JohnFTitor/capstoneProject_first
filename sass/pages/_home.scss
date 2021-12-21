@@ -2,6 +2,9 @@
 .presentation > * {
   margin-left: 10px;
   margin-bottom: 10px;
+  @include for-desktop {
+    margin-left: 0;
+  }
 }
 
 .container {
@@ -12,11 +15,28 @@
     border: 4px solid white;
     padding: 20px;
     margin: 20px 0;
+    @include for-desktop {
+      width: 80%;
+      p {
+        font-size: 16px;
+      }
+    }
   }
 }
 
 .presentation {
   padding: 50px 10px 90px 10px;
+  @include for-desktop {
+    width: 90%;
+    padding-top: 15vh;
+    padding-bottom: 20vh;
+  }
+  @include for-big-desktop {
+    width: 75%;
+  }
+}
+
+#presentation {
   background-color: #f4f4f4;
 }
 
@@ -134,4 +154,19 @@
   width: 70px;
   height: 70px;
   z-index: -1;
+}
+
+.presentation,
+.programm,
+.professors {
+  @include for-desktop {
+    padding-left: 13vw;
+    padding-right: 13vw;
+  }
+}
+
+.info-description {
+  @include for-desktop {
+    font-size: 22px;
+  }
 }

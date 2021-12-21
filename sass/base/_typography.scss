@@ -26,6 +26,9 @@ button {
   font-size: 30px;
   font-family: 'Cocogoose', sans-serif;
   font-weight: 400;
+  @include for-desktop {
+    font-size: 35px;
+  }
 }
 
 .title {
@@ -48,6 +51,17 @@ button {
     color: transparent;
     background-image: $color-title-home;
     background-color: $color-title;
+    @include for-desktop {
+      font-size: 60px;
+      line-height: 60px;
+      padding: 10px 0;
+    }
+  }
+
+  &-description-home {
+    @include for-desktop {
+      font-size: 40px;
+    }
   }
 }
 
