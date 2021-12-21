@@ -60,6 +60,25 @@
     color: $color-text-white;
     font-size: 16px;
   }
+
+  @include for-desktop {
+    flex-direction: column;
+    padding: 30px 20px;
+    margin-right: 3px;
+    p {
+      width: 100%;
+      text-align: center;
+    }
+    > * {
+      margin-bottom: 15px;
+    }
+  }  
+}
+
+.rowlist {
+  @include for-desktop {
+    display: flex;
+  }
 }
 
 .programm {
@@ -73,12 +92,31 @@
     font-weight: 600;
     margin: 30px 0 10px 0;
   }
+  @include for-desktop {
+    padding: 0 3vw;
+    h1 {
+      margin-top: 60px;
+    }
+    a {
+      color: $color-text-white;
+      margin: 80px 0;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+  }
+  @include for-big-desktop {
+    padding-left: 13vw;
+    padding-right: 13vw;
+  }
 }
 
 .line {
   border: 1px solid $color-title;
   width: 50px;
   margin-bottom: 40px;
+  @include for-desktop {
+    margin-bottom: 50px;
+  }
 }
 
 .subtitle {
@@ -157,7 +195,6 @@
 }
 
 .presentation,
-.programm,
 .professors {
   @include for-desktop {
     padding-left: 13vw;

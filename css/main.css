@@ -228,6 +228,20 @@ button:hover {
     width: 55%;
     color: #fff;
     font-size: 16px; }
+  @media screen and (min-width: 1000px) {
+    .language {
+      flex-direction: column;
+      padding: 30px 20px;
+      margin-right: 3px; }
+      .language p {
+        width: 100%;
+        text-align: center; }
+      .language > * {
+        margin-bottom: 15px; } }
+
+@media screen and (min-width: 1000px) {
+  .rowlist {
+    display: flex; } }
 
 .programm {
   background-color: #272a31;
@@ -238,11 +252,28 @@ button:hover {
     color: #fff;
     font-weight: 600;
     margin: 30px 0 10px 0; }
+  @media screen and (min-width: 1000px) {
+    .programm {
+      padding: 0 3vw; }
+      .programm h1 {
+        margin-top: 60px; }
+      .programm a {
+        color: #fff;
+        margin: 80px 0;
+        text-decoration: underline;
+        text-underline-offset: 3px; } }
+  @media screen and (min-width: 1440px) {
+    .programm {
+      padding-left: 13vw;
+      padding-right: 13vw; } }
 
 .line {
   border: 1px solid #ec5242;
   width: 50px;
   margin-bottom: 40px; }
+  @media screen and (min-width: 1000px) {
+    .line {
+      margin-bottom: 50px; } }
 
 .subtitle {
   width: fit-content;
@@ -305,7 +336,6 @@ button:hover {
 
 @media screen and (min-width: 1000px) {
   .presentation,
-  .programm,
   .professors {
     padding-left: 13vw;
     padding-right: 13vw; } }
