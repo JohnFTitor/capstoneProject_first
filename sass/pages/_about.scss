@@ -88,3 +88,33 @@
         font-weight: 600;
     }
 }
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    img {
+        min-width: fit-content;
+        width: 150px;
+        margin-bottom: 20px;
+    }
+}
+
+#partner {
+    background-color: $color-text;
+}
+
+.footer {
+    box-sizing: border-box;
+    padding: 40px 10px;
+    flex-wrap: nowrap;
+    img {
+        width: 200px;
+        margin-right: 40px;
+    }
+    p {
+        font-size: 14px;
+        font-weight: 600;
+    }
+}

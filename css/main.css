@@ -134,7 +134,7 @@ button:hover {
 
 .line {
   border: 1px solid #EC5242;
-  width: 40px;
+  width: 50px;
   margin-bottom: 40px; }
 
 .subtitle {
@@ -269,4 +269,28 @@ button:hover {
     margin-bottom: 20px; }
   .event-info p {
     color: #ffffff;
+    font-weight: 600; }
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%; }
+  .flex-container img {
+    min-width: fit-content;
+    width: 150px;
+    margin-bottom: 20px; }
+
+#partner {
+  background-color: #272a31da; }
+
+.footer {
+  box-sizing: border-box;
+  padding: 40px 10px;
+  flex-wrap: nowrap; }
+  .footer img {
+    width: 200px;
+    margin-right: 40px; }
+  .footer p {
+    font-size: 14px;
     font-weight: 600; }
