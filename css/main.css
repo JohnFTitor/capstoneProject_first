@@ -1,4 +1,3 @@
-/* Here will go my mixins */
 @import url("https://fonts.googleapis.com/css2?family=Gothic+A1&family=Lato&display=swap");
 a {
   appearance: none;
@@ -61,6 +60,12 @@ button {
     font-size: 40px;
     font-weight: 400;
     line-height: 40px; }
+  .title-home {
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #c71e1e 0%, red 26%, #ff9500 76%, #ffb800 100%);
+    background-color: #ec5242; }
 
 .theme2-title {
   font-weight: 600;
@@ -75,6 +80,12 @@ button:hover {
   color: #fff;
   padding: 30px 50px;
   margin: 40px 0; }
+  .interaction-alternative {
+    color: #ec5242;
+    border: 5px solid #ec5242;
+    margin: 0;
+    padding: 10px 20px;
+    background-color: transparent; }
 
 .extend {
   width: 100%;
@@ -89,6 +100,61 @@ button:hover {
   .navbar ul {
     box-sizing: border-box;
     padding: 10px 20px; }
+  @media screen and (min-width: 1000px) {
+    .navbar {
+      background-color: #FFFFFF; }
+      .navbar-black {
+        background-color: #272a31da;
+        color: #fff; }
+      .navbar ul {
+        padding: 5px; } }
+
+.desktop {
+  display: none; }
+  @media screen and (min-width: 1000px) {
+    .desktop {
+      display: block; } }
+
+@media screen and (min-width: 1000px) {
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .nav-links {
+      justify-content: flex-start; }
+    .nav-links > * {
+      margin-right: 40px; } }
+    @media screen and (min-width: 1000px) and (min-width: 1440px) {
+      .nav-links > * {
+        margin-right: 80px; } }
+
+@media screen and (min-width: 1000px) {
+    .nav-start {
+      align-items: flex-start; }
+    .nav img {
+      height: 60px; } }
+
+@media screen and (min-width: 1000px) {
+  .mobile {
+    display: none; } }
+
+@media screen and (min-width: 1000px) {
+  .social {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 200px; }
+    .social ul {
+      padding: 3px; }
+    .social a {
+      color: #fff;
+      font-weight: 600;
+      font-size: 14px; }
+    .social .nav {
+      width: 300px; } }
+
+@media screen and (min-width: 1000px) {
+  .social-icon img {
+    height: 20px; } }
 
 #footer {
   box-sizing: border-box;

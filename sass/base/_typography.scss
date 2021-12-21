@@ -41,6 +41,14 @@ button {
     font-weight: 400;
     line-height: 40px;
   }
+
+  &-home {
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-image: $color-title-home;
+    background-color: $color-title;
+  }
 }
 
 .theme2-title {

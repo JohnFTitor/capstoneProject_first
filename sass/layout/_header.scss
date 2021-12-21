@@ -5,4 +5,76 @@
     box-sizing: border-box;
     padding: 10px 20px;
   }
+
+  @include for-desktop {
+    background-color: #FFFFFF;
+    &-black {
+      background-color: $color-text;
+      color: $color-text-white;
+    }
+    ul {
+      padding: 5px;
+    }
+  }
+}
+
+.desktop {
+  display: none;
+  @include for-desktop {
+    display: block;
+  }
+}
+
+.nav {
+  @include for-desktop {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &-links {
+      justify-content: flex-start;
+    }
+    &-links > * {
+      margin-right: 40px;
+      @include for-big-desktop {
+        margin-right: 80px;
+      }
+    }
+    &-start {
+      align-items: flex-start;
+    }
+    img {
+      height: 60px;
+    }
+  }
+}
+
+.mobile {
+  @include for-desktop {
+    display: none;
+  }
+}
+
+.social {
+  @include for-desktop {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 200px;
+    ul {
+      padding: 3px;
+    }
+    a{
+      color: $color-text-white;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .nav {
+      width: 300px;
+    }
+  }
+}
+
+.social-icon img {
+  @include for-desktop {
+    height: 20px;
+  }
 }
