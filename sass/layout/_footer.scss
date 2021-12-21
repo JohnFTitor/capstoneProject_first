@@ -27,3 +27,12 @@
     padding: 80px 10px;
   }
 }
+
+.about-footer {
+  @include for-desktop {
+    background-color: $color-subtitle;
+    p {
+      color: $color-text-white;
+    }
+  }
+}

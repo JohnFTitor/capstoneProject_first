@@ -85,6 +85,10 @@ button {
   font-weight: 600;
   width: 80%;
   margin: 30px auto 10px auto; }
+  @media screen and (min-width: 1000px) {
+    .theme2-title {
+      font-size: 28px;
+      font-weight: 400; } }
 
 button:hover {
   cursor: pointer; }
@@ -178,6 +182,12 @@ button:hover {
   @media screen and (min-width: 1000px) {
     #footer {
       padding: 80px 10px; } }
+
+@media screen and (min-width: 1000px) {
+  .about-footer {
+    background-color: #272a31; }
+    .about-footer p {
+      color: #fff; } }
 
 @media screen and (min-width: 1000px) {
   .grid-container {
@@ -414,6 +424,10 @@ button:hover {
   padding: 30px 10px; }
   .logo-container img {
     max-width: 100%; }
+  @media screen and (min-width: 1000px) {
+    .logo-container {
+      width: 60%;
+      margin: 50px auto 10px auto; } }
 
 .logo {
   border-bottom: 1px solid #d3d3d3; }
