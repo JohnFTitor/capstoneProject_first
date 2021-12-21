@@ -43,6 +43,9 @@ button {
     font-size: 40px;
     font-weight: 400;
     line-height: 40px;
+    @include for-desktop {
+      font-size: 45px;
+    }
   }
 
   &-home {

@@ -41,12 +41,6 @@
   }
 }
 
-.mobile {
-  @include for-desktop {
-    display: none;
-  }
-}
-
 .social {
   @include for-desktop {
     display: flex;

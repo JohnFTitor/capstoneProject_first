@@ -63,6 +63,9 @@ button {
     font-size: 40px;
     font-weight: 400;
     line-height: 40px; }
+    @media screen and (min-width: 1000px) {
+      .title-header {
+        font-size: 45px; } }
   .title-home {
     -webkit-background-clip: text;
     background-clip: text;
@@ -138,10 +141,6 @@ button:hover {
       align-items: flex-start; }
     .nav img {
       height: 60px; } }
-
-@media screen and (min-width: 1000px) {
-  .mobile {
-    display: none; } }
 
 @media screen and (min-width: 1000px) {
   .social {
@@ -378,6 +377,16 @@ button:hover {
   text-align: center;
   padding: 20px;
   padding-bottom: 40px; }
+  @media screen and (min-width: 1000px) {
+    .about {
+      padding-left: 18vw;
+      padding-right: 18vw; }
+      .about-principal {
+        padding-top: 10vh;
+        padding-bottom: 10vh; }
+        .about-principal h1 {
+          width: 80%;
+          margin: 0 auto 20px auto; } }
 
 .about > * {
   margin-bottom: 20px; }
@@ -386,6 +395,9 @@ button:hover {
   background-color: #fff;
   border: 1px solid #d3d3d3;
   padding: 20px; }
+  @media screen and (min-width: 1000px) {
+    .about-text {
+      margin: 30px 0 60px 0; } }
 
 .small-placeholder {
   width: 80%;
@@ -475,3 +487,7 @@ button:hover {
       display: block; }
       .desktop-flex {
         display: flex; } }
+
+@media screen and (min-width: 1000px) {
+  .mobile {
+    display: none; } }
