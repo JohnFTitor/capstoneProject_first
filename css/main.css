@@ -274,8 +274,7 @@ button:hover {
   @media screen and (min-width: 1000px) {
     .presentation {
       width: 90%;
-      padding-top: 15vh;
-      padding-bottom: 20vh; } }
+      padding: 15vh 13vw 20vh 13vw; } }
   @media screen and (min-width: 1440px) {
     .presentation {
       width: 75%; } }
@@ -430,11 +429,6 @@ button:hover {
   width: 70px;
   height: 70px;
   z-index: -1; }
-
-@media screen and (min-width: 1000px) {
-  .presentation {
-    padding-left: 13vw;
-    padding-right: 13vw; } }
 
 @media screen and (min-width: 1000px) {
   .info-description {

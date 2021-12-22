@@ -34,8 +34,7 @@
 
   @include for-desktop {
     width: 90%;
-    padding-top: 15vh;
-    padding-bottom: 20vh;
+    padding: 15vh 13vw 20vh 13vw;
   }
 
   @include for-big-desktop {
@@ -160,7 +159,7 @@
 .professors {
   padding: 20px;
   margin-bottom: 40px;
-  
+
   @include for-desktop {
     padding-left: 7vw;
     padding-right: 7vw;
@@ -239,13 +238,6 @@
   width: 70px;
   height: 70px;
   z-index: -1;
-}
-
-.presentation {
-  @include for-desktop {
-    padding-left: 13vw;
-    padding-right: 13vw;
-  }
 }
 
 .info-description {
