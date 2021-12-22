@@ -29,7 +29,7 @@ div {
 
 @font-face {
   font-family: 'Cocogoose';
-  src: url(../../assets/fonts/cocogoose/cocogoose_trial.woff); }
+  src: url(./../assets/fonts/cocogoose/cocogoose_trial.woff); }
 
 h1,
 h2,
@@ -281,7 +281,7 @@ button:hover {
 
 #presentation {
   position: relative;
-  background: url(../../assets/images/code.jpg) no-repeat center;
+  background: url(./../assets/images/code.jpg) no-repeat center;
   background-color: #f4f4f4; }
 
 .overlay {
@@ -440,7 +440,7 @@ button:hover {
 
 #about {
   position: relative;
-  background: url(../../assets/images/code.jpg) no-repeat center;
+  background: url(./../assets/images/code.jpg) no-repeat center;
   background-color: #f4f4f4; }
 
 .about {
