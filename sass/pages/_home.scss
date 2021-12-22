@@ -147,6 +147,16 @@
 .professors {
   padding: 20px;
   margin-bottom: 40px;
+  
+  @include for-desktop {
+    padding-left: 7vw;
+    padding-right: 7vw;
+  }
+
+  @include for-big-desktop {
+    padding-left: 13vw;
+    padding-right: 13vw;
+  }
 }
 
 .card {
@@ -159,7 +169,7 @@
 }
 
 .card-info {
-  min-width: 50%;
+  max-width: 50%;
 
   h2 {
     font-size: 20px;
@@ -177,6 +187,10 @@
     color: $color-subtitle;
     font-size: 14px;
     line-height: 20px;
+  }
+
+  @include for-big-desktop {
+    max-width: 70%;
   }
 }
 
@@ -214,8 +228,7 @@
   z-index: -1;
 }
 
-.presentation,
-.professors {
+.presentation {
   @include for-desktop {
     padding-left: 13vw;
     padding-right: 13vw;

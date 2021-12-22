@@ -355,6 +355,14 @@ button:hover {
 .professors {
   padding: 20px;
   margin-bottom: 40px; }
+  @media screen and (min-width: 1000px) {
+    .professors {
+      padding-left: 7vw;
+      padding-right: 7vw; } }
+  @media screen and (min-width: 1440px) {
+    .professors {
+      padding-left: 13vw;
+      padding-right: 13vw; } }
 
 .card {
   width: 100%;
@@ -365,7 +373,7 @@ button:hover {
   margin-bottom: 50px; }
 
 .card-info {
-  min-width: 50%; }
+  max-width: 50%; }
   .card-info h2 {
     font-size: 20px; }
   .card-info h3 {
@@ -378,6 +386,9 @@ button:hover {
     color: #272a31;
     font-size: 14px;
     line-height: 20px; }
+  @media screen and (min-width: 1440px) {
+    .card-info {
+      max-width: 70%; } }
 
 .professor-container {
   position: relative;
@@ -408,8 +419,7 @@ button:hover {
   z-index: -1; }
 
 @media screen and (min-width: 1000px) {
-  .presentation,
-  .professors {
+  .presentation {
     padding-left: 13vw;
     padding-right: 13vw; } }
 
