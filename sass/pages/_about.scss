@@ -6,6 +6,21 @@
   text-align: center;
   padding: 20px;
   padding-bottom: 40px;
+
+  @include for-desktop {
+    padding-left: 18vw;
+    padding-right: 18vw;
+
+    &-principal {
+      padding-top: 10vh;
+      padding-bottom: 10vh;
+
+      h1 {
+        width: 80%;
+        margin: 0 auto 20px auto;
+      }
+    }
+  }
 }
 
 .about > * {
@@ -16,6 +31,10 @@
   background-color: #fff;
   border: 1px solid $color-line;
   padding: 20px;
+
+  @include for-desktop {
+    margin: 30px 0 60px 0;
+  }
 }
 
 .small-placeholder {
@@ -37,6 +56,11 @@
   img {
     max-width: 100%;
   }
+
+  @include for-desktop {
+    width: 60%;
+    margin: 50px auto 10px auto;
+  }
 }
 
 .logo {
@@ -45,8 +69,9 @@
 
 .past-container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   margin-top: 50px;
 }
 
@@ -62,6 +87,10 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
+  }
+
+  @include for-desktop {
+    margin-right: 20px;
   }
 }
 
@@ -104,8 +133,34 @@
 
 #partner {
   background-color: $color-text;
+  padding: 20px 0;
+
+  @include for-desktop {
+    h1 {
+      margin-top: 20px;
+      color: $color-line;
+    }
+  }
 }
 
 #about p {
   line-height: 30px;
+}
+
+.desktop {
+  display: none;
+
+  @include for-desktop {
+    display: block;
+
+    &-flex {
+      display: flex;
+    }
+  }
+}
+
+.mobile {
+  @include for-desktop {
+    display: none;
+  }
 }

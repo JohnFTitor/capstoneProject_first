@@ -76,6 +76,8 @@ Some Icons were provided by [Fontawesome](fontawesome.com). Next are the links f
 - [React Icon](https://fontawesome.com/v5.15/icons/react?style=brands)
 - [Angular Icon](https://fontawesome.com/v5.15/icons/angular?style=brands)
 - [Bootstrap Icon](https://fontawesome.com/v5.15/icons/bootstrap?style=brands)
+- [Twitter Icon](https://fontawesome.com/v5.15/icons/twitter?style=brands)
+- [Github Icon](https://fontawesome.com/v5.15/icons/github?style=brands)
 
 This icons are licensed under the Creative Commons Attribution 4.0 internacional license. Here is the link to [Fontawesome license](https://fontawesome.com/license).
 This icon color was modified.

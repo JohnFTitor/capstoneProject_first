@@ -2,6 +2,10 @@
 .presentation > * {
   margin-left: 10px;
   margin-bottom: 10px;
+
+  @include for-desktop {
+    margin-left: 0;
+  }
 }
 
 .container {
@@ -12,11 +16,32 @@
     border: 4px solid white;
     padding: 20px;
     margin: 20px 0;
+
+    @include for-desktop {
+      width: 80%;
+
+      p {
+        font-size: 16px;
+      }
+    }
   }
 }
 
 .presentation {
   padding: 50px 10px 90px 10px;
+
+  @include for-desktop {
+    width: 90%;
+    padding-top: 15vh;
+    padding-bottom: 20vh;
+  }
+
+  @include for-big-desktop {
+    width: 75%;
+  }
+}
+
+#presentation {
   background-color: #f4f4f4;
 }
 
@@ -40,9 +65,38 @@
     color: $color-text-white;
     font-size: 16px;
   }
+
+  @include for-desktop {
+    flex-direction: column;
+    padding: 30px 20px;
+    margin-right: 3px;
+
+    p {
+      width: 100%;
+      text-align: center;
+    }
+
+    > * {
+      margin-bottom: 15px;
+    }
+  }
+
+  @include for-small-mobile {
+    padding: 2em 1em;
+
+    p {
+      width: 35%;
+    }
+  }
 }
 
-.programm {
+.rowlist {
+  @include for-desktop {
+    display: flex;
+  }
+}
+
+.program {
   background-color: $color-subtitle;
   display: flex;
   flex-direction: column;
@@ -53,12 +107,36 @@
     font-weight: 600;
     margin: 30px 0 10px 0;
   }
+
+  @include for-desktop {
+    padding: 0 3vw;
+
+    h1 {
+      margin-top: 60px;
+    }
+
+    a {
+      color: $color-text-white;
+      margin: 80px 0;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+  }
+
+  @include for-big-desktop {
+    padding-left: 13vw;
+    padding-right: 13vw;
+  }
 }
 
 .line {
   border: 1px solid $color-title;
   width: 50px;
   margin-bottom: 40px;
+
+  @include for-desktop {
+    margin-bottom: 50px;
+  }
 }
 
 .subtitle {
@@ -134,4 +212,23 @@
   width: 70px;
   height: 70px;
   z-index: -1;
+}
+
+.presentation,
+.professors {
+  @include for-desktop {
+    padding-left: 13vw;
+    padding-right: 13vw;
+  }
+}
+
+.info-description {
+  @include for-desktop {
+    font-size: 22px;
+  }
+}
+
+.line-dark {
+  margin: 10px 0 10px 0;
+  border-color: $color-line;
 }
