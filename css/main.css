@@ -67,11 +67,10 @@ button {
       .title-header {
         font-size: 45px; } }
   .title-home {
-    -webkit-background-clip: text;
-    background-clip: text;
     color: transparent;
     background-image: linear-gradient(45deg, #c71e1e 0%, red 26%, #ff9500 76%, #ffb800 100%);
-    background-color: #ec5242; }
+    background-color: #ec5242;
+    -webkit-background-clip: text; }
     @media screen and (min-width: 1000px) {
       .title-home {
         font-size: 60px;
@@ -120,7 +119,7 @@ button:hover {
     padding: 10px 20px; }
   @media screen and (min-width: 1000px) {
     .navbar {
-      background-color: #FFFFFF; }
+      background-color: #fff; }
       .navbar-black {
         background-color: #272a31da;
         color: #fff; }

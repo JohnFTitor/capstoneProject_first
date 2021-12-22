@@ -1,27 +1,28 @@
 
 .grid-container {
-    @include for-desktop {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 25px;
-    }
+  @include for-desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+  }
 }
 
 .mainContainer {
-    overflow: hidden;
-    display: grid;
-    height: 100vh;
-    grid-template-areas: "navigation"
-                         "main-content";
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;                     
+  overflow: hidden;
+  display: grid;
+  height: 100vh;
+  grid-template-areas:
+    "navigation"
+    "main-content";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
 }
 
 .header {
-    grid-area: navigation;
+  grid-area: navigation;
 }
 
 .content {
-    grid-area: main-content;
-    overflow: auto;
+  grid-area: main-content;
+  overflow: auto;
 }

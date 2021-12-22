@@ -7,11 +7,13 @@
   }
 
   @include for-desktop {
-    background-color: #FFFFFF;
+    background-color: #fff;
+
     &-black {
       background-color: $color-text;
       color: $color-text-white;
     }
+
     ul {
       padding: 5px;
     }
@@ -23,18 +25,23 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+
     &-links {
       justify-content: flex-start;
     }
+
     &-links > * {
       margin-right: 40px;
+
       @include for-big-desktop {
         margin-right: 80px;
       }
     }
+
     &-start {
       align-items: flex-start;
     }
+
     img {
       height: 60px;
     }
@@ -46,14 +53,17 @@
     display: flex;
     justify-content: flex-end;
     padding-right: 200px;
+
     ul {
       padding: 3px;
     }
-    a{
+
+    a {
       color: $color-text-white;
       font-weight: 600;
       font-size: 14px;
     }
+
     .nav {
       width: 300px;
     }
@@ -81,10 +91,12 @@
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
+
   a {
     color: $color-text-white;
     font-size: 24px;
   }
+
   button {
     font-size: 24px;
     padding: 20px;
@@ -95,6 +107,7 @@
   width: 80px;
   height: 80px;
   padding: 20px;
+
   img {
     width: 100%;
   }
@@ -106,6 +119,7 @@
   padding: 10px;
   width: 100%;
   height: 100px;
+
   img {
     height: 100%;
   }
