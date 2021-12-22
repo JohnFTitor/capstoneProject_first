@@ -164,6 +164,43 @@ button:hover {
   .social-icon img {
     height: 20px; } }
 
+.nav-menu {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #272a31; }
+
+.menu-links {
+  display: flex;
+  margin-top: 30px;
+  width: 100%;
+  height: 70%;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column; }
+  .menu-links a {
+    color: #fff;
+    font-size: 24px; }
+  .menu-links button {
+    font-size: 24px;
+    padding: 20px; }
+
+.closeButton {
+  width: 80px;
+  height: 80px;
+  padding: 20px; }
+  .closeButton img {
+    width: 100%; }
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+  height: 100px; }
+  .menu-header img {
+    height: 100%; }
+
 #footer {
   box-sizing: border-box;
   padding: 40px 10px;
