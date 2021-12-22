@@ -1,4 +1,6 @@
 #about {
+  position: relative;
+  background: url(../../assets/images/code.jpg) no-repeat center;
   background-color: #f4f4f4;
 }
 
@@ -7,6 +9,10 @@
   padding: 20px;
   padding-bottom: 40px;
 
+  &-principal {
+    position: relative;
+    z-index: 2;
+  }
   @include for-desktop {
     padding-left: 18vw;
     padding-right: 18vw;

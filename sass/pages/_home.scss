@@ -28,7 +28,9 @@
 }
 
 .presentation {
+  position: relative;
   padding: 50px 10px 90px 10px;
+  z-index: 2;
 
   @include for-desktop {
     width: 90%;
@@ -42,7 +44,18 @@
 }
 
 #presentation {
+  position: relative;
+  background: url(../../assets/images/code.jpg) no-repeat center;
   background-color: #f4f4f4;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f4f4f4dc;
 }
 
 .language {

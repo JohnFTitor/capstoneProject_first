@@ -167,7 +167,8 @@ button:hover {
   position: fixed;
   width: 100%;
   height: 100vh;
-  background-color: #272a31; }
+  background-color: #272a31;
+  z-index: 3; }
 
 .menu-links {
   display: flex;
@@ -267,7 +268,9 @@ button:hover {
           font-size: 16px; } }
 
 .presentation {
-  padding: 50px 10px 90px 10px; }
+  position: relative;
+  padding: 50px 10px 90px 10px;
+  z-index: 2; }
   @media screen and (min-width: 1000px) {
     .presentation {
       width: 90%;
@@ -278,7 +281,17 @@ button:hover {
       width: 75%; } }
 
 #presentation {
+  position: relative;
+  background: url(../../assets/images/code.jpg) no-repeat center;
   background-color: #f4f4f4; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f4f4f4dc; }
 
 .language {
   display: flex;
@@ -432,12 +445,17 @@ button:hover {
   border-color: #d3d3d3; }
 
 #about {
+  position: relative;
+  background: url(../../assets/images/code.jpg) no-repeat center;
   background-color: #f4f4f4; }
 
 .about {
   text-align: center;
   padding: 20px;
   padding-bottom: 40px; }
+  .about-principal {
+    position: relative;
+    z-index: 2; }
   @media screen and (min-width: 1000px) {
     .about {
       padding-left: 18vw;
