@@ -59,6 +59,8 @@
       image,
     }
   }
+
+  //Professors
   
   const names= ['Ranchoddas Shamalad Chanchad', 'Emilia Titor', 'David Spilbierg'
   , 'Camilo Torres', 'Serana Titor', 'Hashimoto Kurasiki'];
