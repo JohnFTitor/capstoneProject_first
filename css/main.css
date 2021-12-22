@@ -167,7 +167,8 @@ button:hover {
   position: fixed;
   width: 100%;
   height: 100vh;
-  background-color: #272a31; }
+  background-color: #272a31;
+  z-index: 3; }
 
 .menu-links {
   display: flex;
@@ -267,18 +268,29 @@ button:hover {
           font-size: 16px; } }
 
 .presentation {
-  padding: 50px 10px 90px 10px; }
+  position: relative;
+  padding: 50px 10px 90px 10px;
+  z-index: 2; }
   @media screen and (min-width: 1000px) {
     .presentation {
       width: 90%;
-      padding-top: 15vh;
-      padding-bottom: 20vh; } }
+      padding: 15vh 13vw 20vh 13vw; } }
   @media screen and (min-width: 1440px) {
     .presentation {
       width: 75%; } }
 
 #presentation {
+  position: relative;
+  background: url(../../assets/images/code.jpg) no-repeat center;
   background-color: #f4f4f4; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f4f4f4dc; }
 
 .language {
   display: flex;
@@ -355,6 +367,14 @@ button:hover {
 .professors {
   padding: 20px;
   margin-bottom: 40px; }
+  @media screen and (min-width: 1000px) {
+    .professors {
+      padding-left: 7vw;
+      padding-right: 7vw; } }
+  @media screen and (min-width: 1440px) {
+    .professors {
+      padding-left: 13vw;
+      padding-right: 13vw; } }
 
 .card {
   width: 100%;
@@ -365,7 +385,7 @@ button:hover {
   margin-bottom: 50px; }
 
 .card-info {
-  min-width: 50%; }
+  max-width: 50%; }
   .card-info h2 {
     font-size: 20px; }
   .card-info h3 {
@@ -378,6 +398,9 @@ button:hover {
     color: #272a31;
     font-size: 14px;
     line-height: 20px; }
+  @media screen and (min-width: 1440px) {
+    .card-info {
+      max-width: 70%; } }
 
 .professor-container {
   position: relative;
@@ -408,12 +431,6 @@ button:hover {
   z-index: -1; }
 
 @media screen and (min-width: 1000px) {
-  .presentation,
-  .professors {
-    padding-left: 13vw;
-    padding-right: 13vw; } }
-
-@media screen and (min-width: 1000px) {
   .info-description {
     font-size: 22px; } }
 
@@ -422,12 +439,17 @@ button:hover {
   border-color: #d3d3d3; }
 
 #about {
+  position: relative;
+  background: url(../../assets/images/code.jpg) no-repeat center;
   background-color: #f4f4f4; }
 
 .about {
   text-align: center;
   padding: 20px;
   padding-bottom: 40px; }
+  .about-principal {
+    position: relative;
+    z-index: 2; }
   @media screen and (min-width: 1000px) {
     .about {
       padding-left: 18vw;

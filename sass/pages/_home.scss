@@ -28,12 +28,13 @@
 }
 
 .presentation {
+  position: relative;
   padding: 50px 10px 90px 10px;
+  z-index: 2;
 
   @include for-desktop {
     width: 90%;
-    padding-top: 15vh;
-    padding-bottom: 20vh;
+    padding: 15vh 13vw 20vh 13vw;
   }
 
   @include for-big-desktop {
@@ -42,7 +43,18 @@
 }
 
 #presentation {
+  position: relative;
+  background: url(../../assets/images/code.jpg) no-repeat center;
   background-color: #f4f4f4;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f4f4f4dc;
 }
 
 .language {
@@ -147,6 +159,16 @@
 .professors {
   padding: 20px;
   margin-bottom: 40px;
+
+  @include for-desktop {
+    padding-left: 7vw;
+    padding-right: 7vw;
+  }
+
+  @include for-big-desktop {
+    padding-left: 13vw;
+    padding-right: 13vw;
+  }
 }
 
 .card {
@@ -159,7 +181,7 @@
 }
 
 .card-info {
-  min-width: 50%;
+  max-width: 50%;
 
   h2 {
     font-size: 20px;
@@ -177,6 +199,10 @@
     color: $color-subtitle;
     font-size: 14px;
     line-height: 20px;
+  }
+
+  @include for-big-desktop {
+    max-width: 70%;
   }
 }
 
@@ -212,14 +238,6 @@
   width: 70px;
   height: 70px;
   z-index: -1;
-}
-
-.presentation,
-.professors {
-  @include for-desktop {
-    padding-left: 13vw;
-    padding-right: 13vw;
-  }
 }
 
 .info-description {
