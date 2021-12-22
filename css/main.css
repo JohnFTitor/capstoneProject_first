@@ -307,6 +307,11 @@ button:hover {
         text-align: center; }
       .language > * {
         margin-bottom: 15px; } }
+  @media screen and (max-width: 425px) {
+    .language {
+      padding: 2em 1em; }
+      .language p {
+        width: 35%; } }
 
 @media screen and (min-width: 1000px) {
   .rowlist {
