@@ -136,5 +136,5 @@
       }
     }
   }
-  if (professorsContainer) {renderProfessors();}
+  if (professorsContainer) { renderProfessors(); }
 })();
