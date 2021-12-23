@@ -1,0 +1,39 @@
+#footer {
+  box-sizing: border-box;
+  padding: 40px 10px;
+  flex-wrap: nowrap;
+
+  img {
+    width: 200px;
+    margin-right: 40px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  div {
+    @include for-desktop {
+      width: 50%;
+      margin-left: 20px;
+    }
+  }
+
+  .footer-title {
+    font-weight: 600;
+  }
+
+  @include for-desktop {
+    padding: 80px 10px;
+  }
+}
+
+.about-footer {
+  @include for-desktop {
+    background-color: $color-subtitle;
+
+    p {
+      color: $color-text-white;
+    }
+  }
+}
