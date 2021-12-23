@@ -246,7 +246,8 @@ button:hover {
 
 .content {
   grid-area: main-content;
-  overflow: auto; }
+  overflow: auto;
+  scroll-behavior: smooth; }
 
 .presentation > * {
   margin-left: 10px;
@@ -546,6 +547,8 @@ button:hover {
     min-width: auto;
     width: 150px;
     margin-bottom: 20px; }
+  .flex-container a {
+    margin: 0; }
 
 #partner {
   background-color: #272a31da;
