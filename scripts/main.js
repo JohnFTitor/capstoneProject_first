@@ -96,13 +96,12 @@
   const professorsContainer = document.querySelector('.grid-container');
 
   function renderProfessors() {
-    for (let i = 0; i < professors.length; i += 1) {
-      const professorObj = professors[i];
-
+    professors.forEach((professorObj) => {
       // If it has already been rendered, skip it
       if (!document.querySelector(`#${professorObj.id}`)) {
         const card = document.createElement('div');
         card.classList.add('card');
+        card.setAttribute('id', professorObj.id);
         professorsContainer.appendChild(card);
 
         const image = `
@@ -119,14 +118,15 @@
         cardInfo.classList.add('card-info');
         card.appendChild(cardInfo);
 
-        cardInfo.innerHTML = `<h2>${professorObj.name}</h2>`;
+        cardInfo.innerHTML = `<h3>${professorObj.name}</h3>`;
 
         if (professorObj.background) {
-          cardInfo.innerHTML += `<h3>${professorObj.background}</h3>`;
+          cardInfo.innerHTML += `<h4>${professorObj.background}</h4>`;
         }
 
         const description = professorObj.longDescription;
         const shortDescription = description.length > 200 ? `${description.substring(0, 200)}...` : description;
+        professorObj.shortDescription = shortDescription;
 
         cardInfo.innerHTML += `
         <hr class="line line-small line-dark">
@@ -134,7 +134,7 @@
         <p class="desktop">${description}</p>
         `;
       }
-    }
+    });
   }
   if (professorsContainer) { renderProfessors(); }
 })();

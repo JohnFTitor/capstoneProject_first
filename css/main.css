@@ -33,7 +33,8 @@ div {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: 'Lato', sans-serif;
   color: #272a31; }
 
@@ -333,14 +334,14 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .program h1 {
+  .program h2 {
     color: #fff;
     font-weight: 600;
     margin: 30px 0 10px 0; }
   @media screen and (min-width: 1000px) {
     .program {
       padding: 0 3vw; }
-      .program h1 {
+      .program h2 {
         margin-top: 60px; }
       .program a {
         color: #fff;
@@ -386,9 +387,9 @@ button:hover {
 
 .card-info {
   max-width: 50%; }
-  .card-info h2 {
-    font-size: 20px; }
   .card-info h3 {
+    font-size: 20px; }
+  .card-info h4 {
     margin: 10px 0;
     font-size: 16px;
     color: #ec5242;
@@ -528,7 +529,7 @@ button:hover {
   width: 100%;
   height: 100%;
   background-color: #d12411b3; }
-  .event-info h2 {
+  .event-info h3 {
     color: #fff;
     font-size: 40px;
     margin-bottom: 20px; }
@@ -550,7 +551,7 @@ button:hover {
   background-color: #272a31da;
   padding: 20px 0; }
   @media screen and (min-width: 1000px) {
-    #partner h1 {
+    #partner h2 {
       margin-top: 20px;
       color: #d3d3d3; } }
 
