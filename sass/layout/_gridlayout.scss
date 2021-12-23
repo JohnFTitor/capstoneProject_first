@@ -25,4 +25,5 @@
 .content {
   grid-area: main-content;
   overflow: auto;
+  scroll-behavior: smooth;
 }
